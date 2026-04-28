@@ -12,30 +12,28 @@ Static marketing site for [Petfolio](../Petfolio/) — the iOS / iPadOS / Mac Ca
 ```
 petfolio-site/
 ├── index.html, privacy.html           # English (root)
+├── 404.html                           # Cloudflare Pages 404
 ├── es/                                # Spanish
 │   ├── index.html
 │   └── privacy.html
 ├── zh/                                # Simplified Chinese
 │   ├── index.html
 │   └── privacy.html
-├── css/styles.css                     # Shared styles
+├── css/styles.css                     # Shared styles (incl. .theme-dark overrides)
+├── js/theme.js                        # Theme toggle (auto/dark/light, localStorage-backed)
 ├── resources/
-│   ├── app_icon.png                   # Copied from Petfolio/Petfolio/Resources/Assets.xcassets
-│   └── screenshots/                   # Real screenshots go here (currently placeholder slots)
-├── _headers                           # Cloudflare Pages security headers
+│   ├── app_icon.png                   # 1024×1024, also used as apple-touch-icon
+│   └── screenshots/                   # 5 iPhone screenshots (app-1.png … app-5.png, 1290×2796)
+├── _headers                           # Cloudflare Pages security headers (incl. HSTS)
+├── robots.txt                         # Sitemap pointer
+├── sitemap.xml                        # 6-URL multi-locale sitemap with hreflang
 ├── README.md                          # This file
 └── TRANSLATIONS.md                    # Translation sync reference
 ```
 
-## Adding screenshots
+## Updating screenshots
 
-Landing pages currently render placeholder tiles labeled `Pets · Profile · Health · Weight · Calendar · Widgets`. Drop actual screenshots into `resources/screenshots/` as `app-1.png … app-6.png` and swap the placeholder `<div class="shot">` blocks for `<img>` tags in all three locale index pages.
-
-Compress first:
-
-```bash
-pngquant --quality=90-100 --ext .png --force resources/screenshots/app-*.png
-```
+5 real iPhone screenshots live at `resources/screenshots/app-1.png … app-5.png` (1290×2796). Captioned across locales as: pet list / profile hub / photo gallery / calendar / home widgets. Compression is intentionally skipped per project decision; if file sizes become an issue, `pngquant --quality=90-100 --ext .png --force` is safe.
 
 ## Updating copy
 
