@@ -3,7 +3,7 @@
 Static marketing site for [Petfolio](../Petfolio/) — the iOS / iPadOS / Mac Catalyst pet care app.
 
 - **No build step** — plain HTML and CSS.
-- **Hosting**: Cloudflare Pages (domain TBD, likely `petfolio.luminoid.dev`).
+- **Hosting**: Cloudflare Pages — `petfolio.luminoid.dev`.
 - **Locales**: English (root), Spanish (`es/`), Simplified Chinese (`zh/`).
 - **Theme**: warm brown (`#D4875A`) matching `PetfolioTheme`, Fraunces + Nunito typography.
 
@@ -51,4 +51,4 @@ The App Store badge currently says "Coming Soon". When the app ships:
 
 ## Deploy
 
-Cloudflare Pages picks up the directory as-is — no build command. Push changes and the site updates automatically once the site is wired up to the repo.
+Cloudflare Pages picks up the directory as-is — no build command. Push to `main` and Cloudflare auto-deploys to `petfolio.luminoid.dev`.

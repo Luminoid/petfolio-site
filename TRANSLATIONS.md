@@ -6,7 +6,7 @@ Quick cross-locale glossary for Petfolio marketing copy. Keep EN / ES / ZH in sy
 
 | EN | ES | ZH |
 |----|----|----|
-| Petfolio | Petfolio Patitas | Petfolio 爪迹 |
+| Petfolio | Petfolio Patitas | Petfolio 爪爪迹 |
 | Every pet, every paw — one cozy place. | Cada mascota, cada huella — todo en un lugar cálido. | 每一只毛孩子,每一个小爪印 — 都在温暖的一处。 |
 | Coming Soon | Próximamente | 即将推出 |
 | Coming Soon to App Store | Próximamente en la App Store | App Store 即将上架 |
