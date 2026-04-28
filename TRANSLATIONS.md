@@ -38,7 +38,7 @@ Quick cross-locale glossary for Petfolio marketing copy. Keep EN / ES / ZH in sy
 | Every pet, a profile of their own | Un perfil para cada mascota | 每一只宠物,都有属于自己的档案 |
 | Health tracking, carefully logged | Salud registrada con cuidado | 健康记录,细致而温和 |
 | Calendar and reminders | Calendario y recordatorios | 日历与提醒 |
-| Food, litter & supplies | Comida, arena y suministros | 食物、猫砂与用品 |
+| Resources tab — every household catalog in one place | Pestaña Recursos — todos los catálogos del hogar en un sitio | 资源标签页 — 把家中所有目录集中起来 |
 | Vet visits & insurance | Visitas al veterinario y seguro | 兽医就诊与保险 |
 | Smart helpers | Asistentes inteligentes | 智能小帮手 |
 | Your data, your device | Tus datos, tu dispositivo | 你的数据,归你所有 |
