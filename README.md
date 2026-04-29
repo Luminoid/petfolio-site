@@ -41,13 +41,14 @@ petfolio-site/
 2. Mirror changes in `es/` and `zh/`.
 3. Check `TRANSLATIONS.md` for the phrase-by-phrase reference.
 
-## Updating App Store link
+## App Store
 
-The App Store badge currently says "Coming Soon". When the app ships:
+Petfolio v1.0.0 shipped on 2026-04-28. All three locales link to the App Store from the hero `.hero-app-store-badge` (white download badge) and the `.app-store-badges` block in the download section (black iOS + Mac App Store badges, two-up).
 
-1. Replace the `<span class="coming-soon-badge">` in all three `index.html` files with an Apple App Store badge (see [plantfolio-site/index.html](../plantfolio-site/index.html) for the pattern).
-2. Replace the `Coming Soon` pill in the hero (`.hero-badge-pill`) with the download-on-App-Store badge image, linking to the App Store URL.
-3. Add `https://tools.applemediaservices.com` to the CSP `img-src` directive if not already present (it is, to match plantfolio-site's `_headers`).
+- **EN / ES**: link to the US storefront — `https://apps.apple.com/us/app/petfolio-pet-care/id6764127493`
+- **ZH-Hans**: links to the China storefront (app name "Petfolio 爪爪迹") — `https://apps.apple.com/cn/app/petfolio-%E7%88%AA%E7%88%AA%E8%BF%B9/id6764127493`
+
+Badge images come from `https://toolbox.marketingtools.apple.com/api/badges/...` with locale-matched paths (`en-US`, `es-MX`, `zh-Hans`). The CSP `img-src` in `_headers` already allows `tools.applemediaservices.com` and `toolbox.marketingtools.apple.com`.
 
 ## Deploy
 

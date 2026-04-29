@@ -94,22 +94,23 @@ a:hover {
     color: var(--primary-deep);
 }
 
-.hero-badge-pill {
-    background: var(--primary-deep);
-    color: #fff;
-    padding: 8px 18px;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 0.875rem;
-    box-shadow: var(--shadow-soft);
-    transition: transform 0.2s, box-shadow 0.2s;
+.hero-app-store-badge {
+    display: block;
+    line-height: 0;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    transition: opacity 0.15s;
 }
 
-.hero-badge-pill:hover {
-    color: #fff;
-    background: var(--text);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-warm);
+.hero-app-store-badge:hover {
+    opacity: 0.85;
+}
+
+.hero-badge-img {
+    height: 36px;
+    width: auto;
+    display: block;
 }
 
 .hero-inner {
@@ -482,16 +483,29 @@ h2 .emoji {
     margin-bottom: 1.5rem;
 }
 
-.coming-soon-badge {
-    display: inline-block;
-    background: var(--surface-sunset);
-    border: 1px dashed var(--primary);
-    color: var(--primary-deep);
-    padding: 14px 28px;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.02em;
+.app-store-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.app-badge-link {
+    display: block;
+    line-height: 0;
+    text-decoration: none;
+    transition: opacity 0.15s;
+}
+
+.app-badge-link:hover {
+    opacity: 0.85;
+}
+
+.app-badge {
+    height: 44px;
+    width: auto;
+    display: block;
 }
 
 .download-requirements {
@@ -802,8 +816,7 @@ footer a:hover {
 .theme-dark .stat-item .num,
 .theme-dark .support-card a,
 .theme-dark .back-link,
-.theme-dark .privacy-content h2,
-.theme-dark .coming-soon-badge {
+.theme-dark .privacy-content h2 {
     color: #E89D6A;
 }
 
@@ -811,11 +824,6 @@ footer a:hover {
 .theme-dark .lang-switcher a:hover,
 .theme-dark .back-link:hover {
     color: #F4B893;
-}
-
-/* Hero pill: keep white text by anchoring to dark backgrounds in both modes. */
-.theme-dark .hero-badge-pill:hover {
-    background: #6B3D1F;
 }
 
 /* Feature row accent emoji backgrounds — dark variants of the light tints. */
@@ -826,10 +834,6 @@ footer a:hover {
 
 .theme-dark .privacy-content .contact-info {
     border-left-color: #E89D6A;
-}
-
-.theme-dark .coming-soon-badge {
-    border-color: #E89D6A;
 }
 
 /* Theme toggle button — hidden until js/theme.js marks it ready, so no-JS users
@@ -875,7 +879,8 @@ footer a:hover {
 }
 
 a:focus-visible,
-.hero-badge-pill:focus-visible,
+.hero-app-store-badge:focus-visible,
+.app-badge-link:focus-visible,
 .species-pill:focus-visible {
     outline-offset: 4px;
 }
